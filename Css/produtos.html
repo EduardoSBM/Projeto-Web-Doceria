@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doceria</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="briga.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <br><br>
+    <div id="cabecalho">
+        <img src="logo.png" class="logo">
+
+        <div id="menu">
+            <center>
+                <ul>
+                    <font face="Merriweather">
+                        <li><a href="home.html"><b>Home</b></a></li>
+                        <li><a href="cardapio.html"><b>Cardápio</b></a></li>
+                        <li><a href="produtos.html"><b>Pedidos</b></a></li>
+                    </font>
+                </ul>
+            </center>
+        </div>
+
+        <img src="cup.png" class="cup">
+    </div>
+    <br><br>
+
+    <div id="meio2">
+        <form>
+            <div id="div1">
+                <blockquote>
+                    <font face="Merriweather" >
+                        <font face="Merriweather">
+                            <h2>Informações cadastrais:</h2>
+                            </left>
+                        </font>
+
+                        Endereço:
+                        <input type="text" name="Endereco" id="Endereco" placeholder="escreva aqui:" size="11" required>
+                        <br><br>
+
+                        Bairro:
+                        <input type="text" name="Bairro" id="Bairro" placeholder="escreva aqui:" size="14" required>
+                        <br><br>
+
+                        Cidade:
+                        <input type="text" name="Cidade" id="Cidade" placeholder="escreva aqui:" size="13" required>
+                        <br><br>
+
+                        Estado:
+                        <select name="Estado" id="Estado">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="PR">Paraná</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </select>
+                        <br><br>
+
+                        CEP:
+                        <input type="text" name="CEP" id="CEP" placeholder="escreva aqui:" size="15" maxLength="8">
+                        <br><br>
+                    </font>
+            </div>
+            <div id="div2">
+                <blockquote>
+                    <font face="Merriweather" >
+                        <font face="Merriweather" >
+                            <h2>Informações pessoais:</h2>
+                            </left>
+                        </font>
+
+                        Nome:
+                        <input type="text" name="Nome" id="Nome" placeholder="escreva aqui:" size="27" maxLength="50"
+                            required>
+                        <!-- size é para o max. de caracter e requerid é obrigatório.-->
+                        <br><br>
+
+                        Telefone residencial:
+                        <input type="text" name="Telefoneresidencial" id="Telefoneresidencial"
+                            placeholder="escreva aqui:" size="11" maxLength="11">
+                        <br><br>
+
+                        Telefone celular:
+                        <input type="text" name="Telefonecelular" id="Telefonecelular" placeholder="escreva aqui:"
+                            size="16" maxLength="11">
+                        <br><br>
+
+                        E-mail:
+                        <input type="text" name="E-mail" id="E-mail" placeholder="escreva aqui:" size="26">
+                        <br><br>
+
+                        CPF:
+                        <input type="text" name="CPF" id="CPF" placeholder="escreva aqui:" size="30 " maxLength="11">
+                        <br><br>
+
+                        RG:
+                        <input type="text" name="RG" id="RG" placeholder="escreva aqui:" size="31">
+                        <br><br>
+                    </font>
+                </blockquote>
+            </div>
+            <div id="div3">
+                <blockquote>
+                    <font face="Merriweather" >
+                        <font face="Merriweather" >
+                            <h2>Informações sobre o pedido:</h2>
+                            </left>
+                        </font>
+
+                        Data de entrega:
+                        <input type="date" name="Dataentrada" id="Dataentrada" size="10">
+                        <br><br>
+
+                        Hora da entrega:
+                        <input type="time" name="Horaentrada" id="Horaentrada" size="10">
+                        <br><br>
+
+                        Tipo de evento:
+                        <select name="tpevento" id="tpevento">
+                            <option value="1">Casamento </option>
+                            <option value="2">Aniversário </option>
+                            <option value="3">Funeral</option>
+                        </select>
+                        <br><br>
+
+                        Encomenda:
+                        <select name="encomenda" id="encomenda">
+                            <option value="1"> torta </option>
+                            <option value="2"> bolo </option>
+                            <option value="3"> caixa de cookie</option>
+                            <option value="4"> docinhos </option>
+                        </select>
+                        <br><br>
+
+                        Quantidade pedidos:
+                        <select name="Qtdpessoas" id="Qtdpessoas">
+                            <option value="1">1 ㅤ </option>
+                            <option value="2">2 ㅤ </option>
+                            <option value="3">3 ㅤ </option>
+                            <option value="4">4ㅤ </option>
+                            <option value="5">5 ㅤ </option>
+                            <option value="Mais">Mais ㅤ </option>
+                        </select>
+                        <br><br>
+
+                    </font>
+
+                    <input type="reset" name="limpar" id="limpar" value="Limpar">
+                    <input type="submit" name="enviar" id="enviar" value="Enviar">
+                </blockquote>
+            </div>
+        </form>
+    </div>
+    <br><br>
+</body>
+
+</html>
